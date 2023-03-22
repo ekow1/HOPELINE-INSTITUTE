@@ -1,5 +1,7 @@
 /* Start Blog Area css
 ============================================================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@300;400&display=swap');
+
 body{
     background-color: rgba(198, 161, 110, 0.1);
 }
@@ -1102,13 +1104,17 @@ body{
     }
 
     .quote-wrapper {
-        background: rgba(130, 139, 178, 0.1);
-        padding: 15px;
+        background: rgba(0, 92, 83 );
+        padding: 10px;
         line-height: 1.733;
-        color: #888888;
-        font-style: italic;
-        margin-top: 25px;
+        color: $theme-color2;
+        margin-top: 95px;
         margin-bottom: 25px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+        h2{
+            text-decoration: underline;
+        }
 
         @media(min-width: 768px) {
             padding: 30px;
@@ -1119,9 +1125,27 @@ body{
         background: $white_color;
         padding: 15px 15px 15px 20px;
         border-left: 2px solid;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+       
 
         @media(min-width: 768px) {
             padding: 25px 25px 25px 30px;
+        }
+
+      h5{
+        margin-bottom: 30px;
+      }
+
+        ul li{
+            list-style: square;
+            font-weight: 300;
+            font-size: 1.04rem;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            font-family: 'Sono', sans-serif;;
         }
     }
 
